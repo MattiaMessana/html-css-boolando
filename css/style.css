@@ -13,10 +13,11 @@ header{
     z-index: 9999;
     background-color: #ED722E;
     color: white;
+    position: relative;
     /* debug */
-    min-height: 40px;
+    /* min-height: 40px; */
 }
-/* col-link */
+/* colonna link */
 .col-link{
     width: 15%;
     margin-left: 300px;
@@ -35,12 +36,9 @@ header{
     gap: 5px;
     padding: .6rem;
 }
+/* colonna logo */
 .col-logo{
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
     position: relative;
-
 
 }
 .col-logo img{
@@ -50,6 +48,7 @@ header{
     left: 45%;
     bottom: 5px;
 }
+/* colonna bottoni */
 .col-btn{
    text-align: center;
    position: relative;
@@ -67,4 +66,81 @@ header{
     position: absolute;
     left: 80%;
     bottom: 5px;
+}
+/* main */
+/* raw-box */
+
+.raw-conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.raw-conteiner  img{
+    display: block;
+    max-width: 500px;
+    margin: 10px;
+    
+}
+.card{
+    position: relative;
+}
+.card h4{
+    margin-left: 10px;
+}
+.card span{
+    margin-left: 10px;
+    
+} .red {
+    color: red;
+}
+.old-price{
+    text-decoration: line-through;
+}
+.discount{
+    position: absolute;
+    bottom: 15%;
+    left: 2%;
+    padding: .3rem;
+    color: white;
+    background-color: red;
+}
+.ambiente{
+    position: absolute;
+    bottom: 15%;
+    left: 12%;
+    color: white;
+    background-color: green;
+    padding: .3rem;
+
+}
+.heart{
+    position: absolute;
+    bottom: 90%;
+    left: 91%;
+    font-size: 2em;
+    text-align: center;
+    padding: .7rem;
+    background-color: white;
+    
+} 
+#sostein{
+    position: absolute;
+    bottom: 15%;
+    left: 2%;
+    padding: .3rem;
+    color: white;
+    background-color: green;
+
+}
+.img-front{
+    display: block;
+}
+.img-back{
+    display: none;
+}
+.card:hover .img-front{
+    display: none;
+}
+.card:hover .img-back{
+    display: block;
 }
